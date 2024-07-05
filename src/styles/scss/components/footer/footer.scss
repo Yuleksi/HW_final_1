@@ -10,13 +10,15 @@
     line-height: map-get($font-sizes, 'sm');
   }
 
-  ul{
-    gap: 10px;
-  }
 
-  .dot-after:after {
+  .dot-after::after {
     background-color: map-get($colors, 'gray');
-    margin: 3px 6px;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
   }
 
   .container {
@@ -48,10 +50,6 @@
 
   &__phone a {
     color: map-get($colors, 'electric');
-    gap: 10px;
-  }
 
-  &__contacts{
-    gap: 10px;
   }
 }

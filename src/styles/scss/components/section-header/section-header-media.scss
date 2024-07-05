@@ -1,0 +1,15 @@
+@media (min-width: 577px) and (max-width: 767px) {
+  .clients .col-6, .clients .col-3 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients .col-6, .clients .col-3 {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding: 5px;
+  }
+}
